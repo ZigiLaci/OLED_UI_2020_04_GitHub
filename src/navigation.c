@@ -1,16 +1,16 @@
 /*
- * In the sys_data structure, the integer System_Data->opened_window_ID, is the
- * currently displayed windows ID, which is directly changed by the requested navigation
- * direction by the navigation().
+ * In the sys_data structure, the integer System_Data->opened_window_ID is the
+ * currently displayed window's ID, which is changed according to the return value of the
+ * navigation().
  *
  * 			[10] startup
  * 			    	V
  * 			[20] bargraph_DAC <-> [21] bargraph_IF <-> [22] bar_graph_RF
- *	 				V						V					V
+ *	 				V		V		    V
  * 			[30] ethernet_table1
  * 					V
  * 			[40] eth01_info	<->	  [41] eth02_info.....
- * 					V
+ * 					V		    V	
  * 			[50] fan_info
  */
 
